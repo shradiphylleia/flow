@@ -1,0 +1,14 @@
+h1{
+  color: #023d5a;
+  font-family: "Azeret Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight:550;
+  font-style: normal;
+}
+
+.title{
+    margin-left:25vw;
+    margin-top: 40vh;
+    width:55vw;
+    height: 70vh;
+}

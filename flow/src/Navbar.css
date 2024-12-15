@@ -1,0 +1,17 @@
+.navbar{
+    margin-left: 43vw;
+    margin-top:5vh;
+}
+
+.navbar a{
+    color:#0c1012;
+    margin-right: 2vw;
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+    font-style: italic;
+}
