@@ -1,5 +1,19 @@
 .signUp{
-    width: 10vw;
+    width: 5vw;
+    padding: 1vh;
     height: 5vh;
-    background-color: darkcyan;
+    margin-top: 5vh;
+    margin-left: 25vw;
+}
+
+.signUp a{
+    color:darkcyan;
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.signUp a:hover{
+    text-decoration: underline;
+    font-style: italic;
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import './Button.css'
 
-function Button(classname,link,name) {
+function Button({name}) {
   return (
-    <div className={classname}>
-        <a href={link}>{name}</a>
+    <div className={name}>
+        <a href='/login'>login</a>
     </div>
   )
 }

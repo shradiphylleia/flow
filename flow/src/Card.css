@@ -1,0 +1,31 @@
+.heart, .ai,.wellness{
+margin-left: 30vw;
+width: 45vw;
+height: 25vh;
+}
+
+.heart img, .ai img,.wellness img{
+    width: 30vw;
+    height: 32vh;
+    margin-left: 5vw;
+}
+
+.heart h1{
+    margin-left: 2.5vw;
+}
+
+.ai, .wellness{
+    margin-top: 60vh;
+}
+
+.ai h1{
+    margin-left:6vw;
+}
+
+.ai img{
+    margin-left: 7vw;
+}
+
+.wellness h1{
+margin-left: 5vw;
+}

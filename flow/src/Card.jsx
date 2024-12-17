@@ -1,9 +1,12 @@
 import React from 'react'
+import './Card.css'
 
-function Card(cardName) {
+function Card({cardName,children}) {
   return (
     <>
-    <div className={cardName}></div>
+    <div className={cardName}>
+      {children}
+    </div>
     </>
   )
 }
