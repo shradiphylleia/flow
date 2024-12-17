@@ -21,7 +21,7 @@ import {
           element:<About/>
         },
         {
-          path: "features",
+          path: "try",
           element: <Try/>
         },
         {

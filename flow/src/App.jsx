@@ -14,9 +14,9 @@ function App() {
     </div>
     <div className="landingPage">
     <img src="src/assets/blueflower.png" alt="flower" style={{marginLeft:'68vw', transform: 'rotate(-24deg)', position: 'absolute', width:'30vw'}} />
-    <Title className='landingTitle' header={
+    <Title name='title' header={
     <>
-    learn about the art of accupressure to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    learn about the art of acupressure to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <span style={{ color: '#BE9F6A', fontStyle:'italic', fontWeight:'600'}}>relax and re-center</span>
     </>
     }></Title>

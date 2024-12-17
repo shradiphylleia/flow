@@ -1,0 +1,30 @@
+
+.cntr{
+    display: flex;
+}
+
+.text{
+    margin-top: 30vh;
+    margin-left: 10vw;
+}
+.intro{
+    width: 10vw;
+    height: 10vh;
+    margin-top: 10vh;
+}
+
+.desc{
+    margin-top: 5vh;
+    width: 40vw;
+    height: 40vh;
+    font-size: 20px;
+    font-family: "Azeret Mono";
+    justify-content: center;
+}
+
+h3{
+    font-family: "Azeret Mono";
+    font-weight: 170;
+    margin-left: 10vw;
+
+}
