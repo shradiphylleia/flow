@@ -4,7 +4,7 @@ import './Button.css'
 function Button({name}) {
   return (
     <div className={name}>
-        <a href='/login'>login</a>
+        <a href='/signup'>login</a>
     </div>
   )
 }
