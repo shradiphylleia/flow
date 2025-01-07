@@ -1,0 +1,17 @@
+.concern{
+    display: 'flex';
+    flex-wrap: 'wrap';
+    margin-left:20vw;
+}
+
+.title{
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+    margin-left: 35vw;
+    font-family: "Playwrite HR Lijeva", cursive;
+    height: 20px;
+}
+
+.title h2{
+    font-size: 34px;
+}
