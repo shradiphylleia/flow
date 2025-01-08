@@ -2,9 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import About from './About.jsx';
-import Try from './Try.jsx';
 import Signup from './Signup.jsx';
 import NotFound from './NotFound.jsx';
+import Symptoms from './Symptoms.jsx';
+import Recommendation from './Recommendation.jsx';
 
 import {
     createBrowserRouter,
@@ -21,8 +22,12 @@ import {
           element:<About/>
         },
         {
-          path: "try",
-          element: <Try/>
+          path: "symptoms",
+          element: <Symptoms/>
+        },
+        {
+          path:"recommendation",
+          element:<Recommendation/>
         },
         {
           path:"signup",

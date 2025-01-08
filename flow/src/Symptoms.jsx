@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import './Try.css'
+import { useNavigate } from 'react-router-dom';
+import './Symptoms.css'
 
-function Try() {
+function Symptoms() {
   const [selectedSymptoms, setSelectedSymptoms] = useState([]);
+  const navigate = useNavigate();
 
   const symptoms = [
     'Anxiety',
@@ -25,6 +27,7 @@ function Try() {
 
   const handleDone = () => {
     console.log('Selected Symptoms:', selectedSymptoms);
+    navigate('/recommendation', { state: { symptoms: selectedSymptoms } });
   };
 
   return (
@@ -40,9 +43,9 @@ function Try() {
             style={{
               marginLeft:'12px',
               padding: '10px',
-              border: '1px solid #ccc',
+              border: '1px solid #fff',
               borderRadius: '5px',
-              backgroundColor: selectedSymptoms.includes(symptom) ? '#4caf50' : '#f1f1f1',
+              backgroundColor: selectedSymptoms.includes(symptom) ? '#6D98DC' : '#f1f1f1',
               color: selectedSymptoms.includes(symptom) ? '#fff' : '#000',
               cursor: 'pointer',
             }}
@@ -74,4 +77,4 @@ function Try() {
   );
 }
 
-export default Try;
+export default Symptoms;
