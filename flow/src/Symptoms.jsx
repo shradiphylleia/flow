@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Symptoms.css'
 
 function Symptoms() {
@@ -27,14 +27,14 @@ function Symptoms() {
 
   const handleDone = () => {
     console.log('Selected Symptoms:', selectedSymptoms);
-    navigate('/recommendation', { state: { symptoms: selectedSymptoms } });
+    navigate('/recommendation',{state:{symptoms:selectedSymptoms}});
   };
 
   return (
     <div>
       <div className='title'>
         <h2>Select your concerns</h2>
-        </div>
+      </div>
       <div className='concern'>
         {symptoms.map((symptom) => (
           <button
