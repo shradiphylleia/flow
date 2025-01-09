@@ -1,0 +1,23 @@
+.recoContainer{
+    margin-left: 5vw;
+    margin-top: 20vh;
+}
+
+.concernContainer h2 , li{
+    color: #023d5a;
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight:550;
+    font-style: normal;
+  }
+
+.concernContainer h2{
+    font-size: 26px;
+}
+
+img {
+width: 40vw;
+height: 47vh;
+margin-left: 55vw;
+rotate:312deg;
+}

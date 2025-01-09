@@ -10,6 +10,7 @@ const recommendationsData = {
   Insomnia: "Apply gentle pressure to the wrist area (landmark 0) to help calm the mind.",
   Headaches: "Use acupressure on the Small Intestine 3 and Triple Energizer 3 points to alleviate headaches.",
   Overthinking: "Press on the Pericardium 6 point to relax and refocus your thoughts.",
+  'Lack of Concentration': "Press on the Pericardium 6 point to relax and refocus your thoughts."
 };
 
 const symptomLandmarks = {
@@ -20,6 +21,7 @@ const symptomLandmarks = {
   Insomnia: [0], // Wrist landmark
   Headaches: [17, 18], // Small Intestine 3, Triple Energizer 3
   Overthinking: [0], // Pericardium 6
+  'Lack of Concentration':[0]
 };
 
 function Recommendations() {
@@ -38,10 +40,10 @@ function Recommendations() {
   const recommendations = getRecommendations(symptoms);
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <div className='recoContainer'>
       <h1>Recommendations</h1>
       {symptoms.length > 0 ? (
-        <div>
+        <div className='concernContainer'>
           <h2>You mentioned the following concerns:</h2>
           <ul>
             {symptoms.map((symptom, index) => (
@@ -62,6 +64,9 @@ function Recommendations() {
       ) : (
         <p>No symptoms selected.</p>
       )}
+      
+      <img src="src/assets/yellowflower.png" alt="flower graphics"/>
+
     </div>
   );
 }
