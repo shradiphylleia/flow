@@ -10,7 +10,7 @@ function App() {
     <>
     <div className="nav">
     <Navbar></Navbar>
-    <Button name='signUp'></Button>
+    <Button name='learn' btname='learn' link='learn'></Button>
     </div>
     <div className="landingPage">
     <img src="src/assets/blueflower.png" alt="flower" style={{marginLeft:'68vw', transform: 'rotate(-24deg)', position: 'absolute', width:'30vw'}} />

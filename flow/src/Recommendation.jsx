@@ -2,6 +2,8 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './Recommendation.css';
 
+import Button from './Button.jsx';
+
 const recommendationsData = {
   Anxiety: "Try practicing deep breathing exercises and apply gentle pressure on the Large Intestine 4 and Heart 7 acupoints.",
   Depression: "Consider mindfulness meditation and stimulating the Pericardium 8 point on your palm.",
@@ -64,9 +66,8 @@ function Recommendations() {
       ) : (
         <p>No symptoms selected.</p>
       )}
-      
+      <Button name='overlay' btname='start stimulation' link='assist'></Button>      
       <img src="src/assets/yellowflower.png" alt="flower graphics"/>
-
     </div>
   );
 }

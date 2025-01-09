@@ -2,9 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import About from './About.jsx';
-import Signup from './Signup.jsx';
 import NotFound from './NotFound.jsx';
 import Symptoms from './Symptoms.jsx';
+import Learn from '/Learn.jsx';
+import Assist from './Assist.jsx'
 import Recommendation from './Recommendation.jsx';
 
 import {
@@ -30,8 +31,12 @@ import {
           element:<Recommendation/>
         },
         {
-          path:"signup",
-          element:<Signup/>
+          path:"learn",
+          element:<Learn/>
+        },
+        {
+          path:"assist",
+          element:<Assist/>
         },
         {
           path:"*",
