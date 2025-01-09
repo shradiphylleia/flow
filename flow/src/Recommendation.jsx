@@ -67,7 +67,7 @@ function Recommendations() {
         <p>No symptoms selected.</p>
       )}
       <Button name='overlay' btname='start stimulation' link='assist'></Button>      
-      <img src="src/assets/yellowflower.png" alt="flower graphics"/>
+      <img className='recoimg' src="src/assets/yellowflower.png" alt="flower graphics"/>
     </div>
   );
 }

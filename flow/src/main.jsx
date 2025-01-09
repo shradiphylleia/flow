@@ -4,7 +4,7 @@ import App from './App.jsx'
 import About from './About.jsx';
 import NotFound from './NotFound.jsx';
 import Symptoms from './Symptoms.jsx';
-import Learn from '/Learn.jsx';
+import Learn from './Learn.jsx';
 import Assist from './Assist.jsx'
 import Recommendation from './Recommendation.jsx';
 
