@@ -1,44 +1,50 @@
+import p5 from 'p5';
 
-let handPose;
-let video;
-let hands = [];
+export function setupP5(sketchContainerId) {
+  new p5((p) => {
+    let video;
+    let handPose;
+    let hands = [];
 
-function preload() {
-  handPose = ml5.handPose();
-}
+    p.preload = () => {
+      // Load the handPose model
+      handPose = ml5.handPose(video, () => {
+        console.log('HandPose model loaded');
+      });
+    };
 
-function setup() {
-  createCanvas(640, 480);
-  video = createCapture(VIDEO);
-  video.size(640, 480);
-  video.hide();
-  handPose.detectStart(video, gotHands);
-}
+    p.setup = () => {
+      const canvas = p.createCanvas(640, 480);
+      canvas.parent(sketchContainerId); // Attach canvas to the React container
+      video = p.createCapture(p.VIDEO);
+      video.size(640, 480);
+      video.hide();
 
+      // Start the detection loop
+      detectHands();
+    };
 
- let t = 0;
+    const detectHands = () => {
+      handPose.detect(video, (results) => {
+        hands = results; // Update hands with the latest prediction
+        detectHands(); // Keep detecting
+      });
+    };
 
-function draw() {
-  image(video, 0, 0, width, height);
-  let pressurePoint = [0, 1, 2];
+    p.draw = () => {
+      p.background(220);
+      p.image(video, 0, 0, p.width, p.height);
 
-  for (let i = 0; i < hands.length; i++) {
-    let hand = hands[i];
-    for (let j = 0; j < pressurePoint.length; j++) {
-      let k = pressurePoint[j];
-      let keypoint = hand.keypoints[k];
-      
-      let animatedRadius = 5 + 4 * sin(t);
-
-      fill(55, 111, 115);
-      circle(keypoint.x, keypoint.y, animatedRadius);
-    }
-  }
-
-  t += 0.1;
-}
-
-
-function gotHands(results) {
-  hands = results;
+      // Draw hand landmarks if available
+      if (hands.length > 0) {
+        hands.forEach((hand) => {
+          hand.landmarks.forEach((landmark) => {
+            p.fill(0, 255, 0);
+            p.noStroke();
+            p.ellipse(landmark[0], landmark[1], 10, 10); // Draw a circle for each landmark
+          });
+        });
+      }
+    };
+  });
 }

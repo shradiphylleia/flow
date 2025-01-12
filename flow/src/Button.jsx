@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Button.css";
 
-function Button({ name, btname, link }) {
+function Button({ name, btname, link, state }) {
   return (
     <div className={name}>
-      <Link to={`/${link}`}>{btname}</Link>
+      <Link to={{ pathname: `/${link}`, state }}>{btname}</Link>
     </div>
   );
 }

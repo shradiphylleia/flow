@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation} from 'react-router-dom';
 import './Recommendation.css';
 
 import Button from './Button.jsx';
@@ -16,18 +16,17 @@ const recommendationsData = {
 };
 
 const symptomLandmarks = {
-  Anxiety: [2, 5, 0], // Large Intestine 4 and Heart 7
-  Depression: [0], // Pericardium 8
-  Fatigue: [13], // Ring finger
-  Irritability: [1, 2, 3], // Lung 10, Pericardium 6, Liver 3
-  Insomnia: [0], // Wrist landmark
-  Headaches: [17, 18], // Small Intestine 3, Triple Energizer 3
-  Overthinking: [0], // Pericardium 6
+  Anxiety: [2, 5, 0],
+  Depression: [0], 
+  Fatigue: [13], 
+  Irritability: [1, 2, 3], 
+  Insomnia: [0],
+  Headaches: [17, 18], 
+  Overthinking: [0],
   'Lack of Concentration':[0]
 };
 
 function Recommendations() {
-  //data passed from navigation(Symptoms)
   const location = useLocation();
   const symptoms = location.state?.symptoms || [];
 
@@ -66,7 +65,7 @@ function Recommendations() {
       ) : (
         <p>No symptoms selected.</p>
       )}
-      <Button name='overlay' btname='start stimulation' link='assist'></Button>      
+      <Button name="overlay" btname="start stimulation" link="assist"   />
       <img className='recoimg' src="src/assets/yellowflower.png" alt="flower graphics"/>
     </div>
   );
