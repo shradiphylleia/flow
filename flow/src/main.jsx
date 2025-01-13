@@ -7,6 +7,7 @@ import Symptoms from './Symptoms.jsx';
 import Learn from './Learn.jsx';
 import Assist from './Assist.jsx'
 import Recommendation from './Recommendation.jsx';
+import Prompt from './Prompt.jsx';
 
 import {
     createBrowserRouter,
@@ -37,6 +38,10 @@ import {
         {
           path:"assist",
           element:<Assist/>
+        },
+        {
+          path:"prompt",
+          element:<Prompt/>
         },
         {
           path:"*",

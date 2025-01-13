@@ -1,0 +1,29 @@
+html{
+    background-color: rgb(187, 201, 159);
+}
+
+.greeting{
+    margin-top:20vh;
+    margin-left: 20vw;
+}
+
+.moodlog{
+    display: flex;
+    margin-top:5vh;
+}
+
+.concernInput{
+    width:25vw;
+    height:20vh;
+    margin-left: 20vw;
+    padding:10px;
+    border-radius:5px;
+    border: 2px solid rgb(104, 114, 84);
+}
+
+.imgChill{
+    height: 300px;
+    width: 280px;
+    margin-left:15vw;
+    margin-top:10vh;
+}

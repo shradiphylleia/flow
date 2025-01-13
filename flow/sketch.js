@@ -1,4 +1,3 @@
-import p5 from 'p5';
 
 export function setupP5(sketchContainerId) {
   new p5((p) => {
